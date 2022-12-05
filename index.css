@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
+
+/*configurar toda la pag*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/*config generales*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body html{
+    overflow-x: hidden;
+
+}
+
+body {
+    background: #202020;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+/*final de config generales*/
+
+/*header y titulos*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(./imagenes/looney\ fondo.jpg) ;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-content{
+    margin-bottom: 150px;
+        color: rgba(219, 120, 39, 0.9) ;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.ctn{ 
+    padding: 10px 5px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/*final de header y titulos*/
+
+/*inicio de navbar*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(222, 88, 10);
+    background: #f1eded;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+   
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*final navbar*/
+
+/*segunda parte de la pagina*/
+.tittle{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(73,73,126);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.events .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    color:#707070;
+    padding: 0px 40px;
+}
+
+.ct2{
+    padding: 15px 5px;
+    padding-left: 5px;
+    margin: 20px auto;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.events .ct2{
+    margin-top: 20px;
+}
+
+.img{
+    height: 400px;
+    width: 550px;
+    padding-left: 100px;
+}
+
+/*final de la segunda parte de la pagina*/
+
+/*inicio de la tercera pag*/
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./imagenes/fondo2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60px;
+    padding: 50px;
+    color: rgb(24, 72, 245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    padding-left: 500px;
+}
+
+.explore-content .line{
+    margin-bottom: 50px;
+    margin-left: 170px;
+}
+
+.explore-content p{
+    color: rgb(12, 11, 11);
+    background-color: rgb(211, 168, 40);
+    padding-left: 500px;
+}
+
+.explore-content .ctn{
+    margin-top: 40px;
+    margin-left: 425px;
+} 
+
+
+
+.ctn3{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 450px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/*final de la tercera pag*/
+
+/*cuarta parte*/
+.galeria {
+    background-color: rgb(16, 16, 15);
+    color: rgb(241, 155, 62);
+    padding: 80px 0;
+   
+   
+}
+
+.galeria .contenido-seccion {
+    max-width: 500px;
+    margin:auto;
+    display:flex;
+}
+
+.galeria h1 {
+    font-size: 60px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.galeria .img-gallery {
+    width: 100%;
+    margin: 50px auto 50px;
+    display:auto;
+    text-align:center;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    gap: 30px;
+}
+
+.galeria .img-gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.galeria .img-gallery img:hover {
+    transform: scale(1.2);
+}
+.ctn4{
+    padding: 15px 5px;
+    padding-left: 5px;
+    margin: 20px auto;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke; 
+}
+/*final de la cuarta parte*/
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #480293;
+    text-align: center;
+}
+/* SECCION CONTACTO */
+
+body {
+    background: #e6961ec1;
+    display: block;
+    align-self: center;
+    align-content: center;
+}
+
+
+
+
+iframe {
+    align-self: center;
+    border-radius: 15px;
+    display: table-column;
+    align-content: center;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-self:  center;
+}
+
+.personajesycapitulos .row {
+    margin-top: 50px;
+}
+
+.contacto{
+    background-color: rgb(239, 246, 241);
+    color: rgb(16, 16, 16);
+    padding: 90px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 20px 0;
+    color: #000;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #131415;
+    color: rgb(245, 251, 245);
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: #040404;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: rgb(231, 249, 240);
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(6, 6, 6);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #070707;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: rgb(226, 236, 236);
+    display: inline-block;
+    margin-right: 20px;
+}
